@@ -11,25 +11,157 @@
     "image": "nightking.jpg"
   },
   {
-    "question": "asad1",
+    "question": "What is the only thing that can put out Wildfire?",
     "answers": [
-      "asdd",
-      "asd11",
-      "asd22",
-      "asd33"
+      "Wind",
+      "Sand",
+      "Water",
+      "Ice"
     ],
-    "correctAnswer": "0",
-    "image": "wall.jpg"
+    "correctAnswer": "Sand",
+    "image": "wildfire.jpg"
   },
   {
-    "question": "asad2",
+    "question": "How many times had Beric Dondarrion been brought back to life?",
     "answers": [
-      "asddd",
-      "asd111",
-      "asd222",
-      "asd333"
+      "Three times",
+      "Five times",
+      "Six times",
+      "Seven times"
     ],
-    "correctAnswer": "0",
-    "image": "wall.jpg"
+    "correctAnswer": "Six times",
+    "image": "beric.jpg"
+  },
+  {
+    "question": "What is the name of Rickon Stark's Direwolf?",
+    "answers": [
+      "Shaggydog",
+      "North",
+      "Summer",
+      "Nymeria"
+    ],
+    "correctAnswer": "Shaggydog",
+    "image": "shaggydog.jpg"
+  },
+  {
+    "question": "Where was the smith who melted down Ned Stark's sword from?",
+    "answers": [
+      "Pentos",
+      "Winterfell",
+      "King's Landing",
+      "Braavos"
+    ],
+    "correctAnswer": "Braavos",
+    "image": "ice.jpg"
+  },
+  {
+    "question": "Known as the best sword fighter in Westeros, what is the name of the man in the picture?",
+    "answers": [
+      "Arthur Dayne",
+      "Barristan Selmy",
+      "Qhorin Halfhand",
+      "Yoren"
+    ],
+    "correctAnswer": "Arthur Dayne",
+    "image": "arthur.jpg"
+  },
+  {
+    "question": "How does Hotpie call Winterfell?",
+    "answers": [
+      "Winterfell",
+      "Winterhell",
+      "Winterland",
+      "Winterfall"
+    ],
+    "correctAnswer": "Winterhell",
+    "image": "hotpie.jpg"
+  },
+  {
+    "question": "What is the name of the castle in the picture?",
+    "answers": [
+      "Horn Hill",
+      "Highgarden",
+      "Castely Rock",
+      "Moat Cailin"
+    ],
+    "correctAnswer": "Horn Hill",
+    "image": "hornhill.png"
+  },
+  {
+    "question": "What is the name of the dragon in the picture?",
+    "answers": [
+      "Drogon",
+      "Balerion",
+      "Viserion",
+      "Rhaegal"
+    ],
+    "correctAnswer": "Viserion",
+    "image": "viserion.jpg"
+  },
+  {
+    "question": "What were the last words of Jon Arryn upon his death?",
+    "answers": [
+      "The true heir is ...",
+      "Winter is coming",
+      "Valar morghulis",
+      "The seed is strong"
+    ],
+    "correctAnswer": "The seed is strong",
+    "image": "jonarryn.jpg"
+  },
+  {
+    "question": "From what metal is the Braavos coin made?",
+    "answers": [
+      "Iron",
+      "Steel",
+      "Bronze",
+      "Copper"
+    ],
+    "correctAnswer": "Iron",
+    "image": "braavoscoin.jpg"
+  },
+  {
+    "question": "What was the name of the butcher's boy who got killed by the Hound?",
+    "answers": [
+      "Lerry",
+      "Mike",
+      "Mycah",
+      "Gendry"
+    ],
+    "correctAnswer": "Mycah",
+    "image": "butcher.jpg"
+  },
+  {
+    "question": "What was the third name that Arya gave to Jaqen h'ghar for him to kill?",
+    "answers": [
+      "Tywin Lannister",
+      "Jaqen h'ghar",
+      "Walder Frey",
+      "Meryn Trant"
+    ],
+    "correctAnswer": "Jaqen h'ghar",
+    "image": "jaqen.png"
+  },
+  {
+    "question": "What is the name of the castle in the picture?",
+    "answers": [
+      "Moat Cailin",
+      "Storm's End",
+      "Harrenhall",
+      "The Eyrie"
+    ],
+    "correctAnswer": "Jaqen h'ghar",
+    "image": "harrenhall.png"
+  },
+  {
+    "question": "Who said \"Even now i could cut through the five of you like carving a cake\" ?",
+    "answers": [
+      "Syrio Forel",
+      "The Hound",
+      "Jaime Lannister",
+      "Barristan Selmy"
+    ],
+    "correctAnswer": "Barristan Selmy",
+    "image": "cake.jpg"
   }
 ]

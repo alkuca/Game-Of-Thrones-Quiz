@@ -10,13 +10,13 @@ class Quiz extends React.Component{
     super(props);
     this.state = {
       currentQuestionNumber: 0,
-      numberOfQuestions: 2,
+      numberOfQuestions: 14,
       startQuiz : false,
       quizFinished: false,
       correctAnswers:0,
       incorrectAnswers:0,
       actualQuestionNumber:1,
-      actualNumberOfQuestions:3
+      actualNumberOfQuestions:15
     }
     this.getAnswers = this.getAnswers.bind(this);
     this.getQuestion = this.getQuestion.bind(this);
@@ -112,13 +112,12 @@ class Quiz extends React.Component{
     this.setState({
       currentQuestionNumber: 0,
       actualQuestionNumber:1,
-      startQuiz : false,
+      startQuiz : true,
       quizFinished: false,
       correctAnswers:0,
       incorrectAnswers:0
     })
   }
-
 
 
   render() {
