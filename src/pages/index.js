@@ -6,9 +6,8 @@ import Quiz from "../components/quiz"
 
 const IndexPage = () => (
   <Layout>
-
-<Quiz></Quiz>
-
+  <Quiz>
+  </Quiz>
   </Layout>
 )
 

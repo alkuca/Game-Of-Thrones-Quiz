@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Josefin+Sans');
+
+
+
 .answers{
-    background-color: white;
+    background-color: #f0f0f0;
     align-self: center;
     width: 100%;
-    padding: 13px 0;
-    font-size: 22px;
+    padding: 11px 0;
+    font-size: 20px;
     box-shadow: 4px 8px 10px #00000029;
     transition: opacity 0.1s;
     cursor:pointer !important;
 }
 
 .answers:hover{
-    opacity: 0.85;
-    transition:0.1s;
+    color:white;
+    background-color: #3695f0;
 }
 
 .answers-container{
@@ -24,7 +28,7 @@ body{
     height:100vh;
     background:url("../images/wall.jpg") no-repeat center;
     background-size:cover;
-
+    font-family: Averia Libre, sans-serif !important;
 }
 
 #___gatsby{
@@ -39,7 +43,7 @@ body{
 .question{
     text-align: center;
     color:white;
-    font-size:27px;
+    font-size:24px;
 
 }
 
@@ -49,14 +53,30 @@ body{
 
 .red{
     background-color:red;
-
+    color:white;
+}
+.red:hover{
+    color:white;
+    background-color:red;
 }
 
 .green{
-    background-color: #3db62f;
+    background-color: #3db62f !important;
+    color:white;
+}
 
+.green:hover{
+    background-color: #3db62f !important;
+    color:white;
 }
 
 .unClickable {
     pointer-events: none;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
 }

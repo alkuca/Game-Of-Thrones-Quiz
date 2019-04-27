@@ -2,12 +2,12 @@
   {
     "question": "How old is the Night King?",
     "answers": [
-      "asd",
-      "asd1",
-      "asd2",
-      "asd3"
+      "1000 years",
+      "3000 years",
+      "8000 years",
+      "10000 years"
     ],
-    "correctAnswer": "asd1",
+    "correctAnswer": "8000 years",
     "image": "nightking.jpg"
   },
   {
