@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 
@@ -11,6 +11,7 @@
     box-shadow: 4px 8px 10px #00000029;
     transition: opacity 0.1s;
     cursor:pointer !important;
+    margin-bottom:18px;
 }
 
 .answers:hover{
@@ -28,7 +29,7 @@ body{
     height:100vh;
     background:url("../images/wall.jpg") no-repeat center;
     background-size:cover;
-    font-family: Averia Libre, sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 #___gatsby{
@@ -39,11 +40,10 @@ body{
 
 }
 
-
 .question{
     text-align: center;
     color:white;
-    font-size:24px;
+    font-size:23px;
 
 }
 
@@ -79,4 +79,19 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     color: white;
+    border-bottom:1px solid white;
+}
+
+@media screen and (max-width: 800px) {
+    .answers{
+        padding: 5px 0;
+        font-size: 17px;
+        font-weight: normal;
+        margin-bottom:15px;
+    }
+    .question{
+        font-size:19px;
+        min-height: 30px;
+        margin-top:10px;
+    }
 }

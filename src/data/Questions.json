@@ -7,7 +7,7 @@
       "8000 years",
       "10000 years"
     ],
-    "correctAnswer": "8000 years",
+    "correctAnswer": "10000 years",
     "image": "nightking.jpg"
   },
   {
@@ -150,8 +150,8 @@
       "Harrenhall",
       "The Eyrie"
     ],
-    "correctAnswer": "Jaqen h'ghar",
-    "image": "harrenhall.png"
+    "correctAnswer": "Harrenhall",
+    "image": "harrenhall.jpg"
   },
   {
     "question": "Who said \"Even now i could cut through the five of you like carving a cake\" ?",
@@ -163,5 +163,115 @@
     ],
     "correctAnswer": "Barristan Selmy",
     "image": "cake.jpg"
+  },
+  {
+    "question": "To which Dragon did the skull in the picture belong?",
+    "answers": [
+      "Meraxes",
+      "Sunfyre",
+      "Vhagar",
+      "Balerion"
+    ],
+    "correctAnswer": "Balerion",
+    "image": "balerion.jpg"
+  },
+  {
+    "question": "About how many swords are there in the Iron Throne?",
+    "answers": [
+      "over 100",
+      "over 200",
+      "over 500",
+      "over 1000"
+    ],
+    "correctAnswer": "over 100",
+    "image": "throne.jpg"
+  },
+  {
+    "question": "What is the personal sigil of Petyr Baelish?",
+    "answers": [
+      "Titans head",
+      "Mockingbird",
+      "Onion",
+      "Yellow flower"
+    ],
+    "correctAnswer": "Mockingbird",
+    "image": "sigil.jpg"
+  },
+  {
+    "question": "What is the name of Robb Stark's direwolf?",
+    "answers": [
+      "Barwolf",
+      "Nymeria",
+      "Young",
+      "Grey Wind"
+    ],
+    "correctAnswer": "Grey Wind",
+    "image": "grey.jpg"
+  },
+  {
+    "question": "What is the name of the man in the picture?",
+    "answers": [
+      "Meryn Trant",
+      "Willis Wode",
+      "Dontos Hollard",
+      "Jaremy Mallister"
+    ],
+    "correctAnswer": "Dontos Hollard",
+    "image": "dontos.jpg"
+  },
+  {
+    "question": "A passing merchant gave a infected doll to shireen from which she got the greyscale.Where was that merchant from?",
+    "answers": [
+      "Braavos",
+      "King's Landing",
+      "Iron Islands",
+      "Dorne"
+    ],
+    "correctAnswer": "Dorne",
+    "image": "shireen.jpg"
+  },
+  {
+    "question": "Continue the phrase: Father, Smith, Warrior...",
+    "answers": [
+      "Mother, Maiden, Crone, Stranger",
+      "Mother, Heir, Maiden, Stranger",
+      "Mother, Crown, Maiden, Stranger",
+      "Mother, Maiden, Cloak, Stranger"
+    ],
+    "correctAnswer": "Mother, Maiden, Crone, Stranger",
+    "image": "wedding.jpeg"
+  },
+  {
+    "question": "Who killed Rhaegar Targaryen at the battle of the Trident",
+    "answers": [
+      "Eddard Stark",
+      "Robert Baratheon",
+      "Jaime Lannister",
+      "Tywin Lannister"
+    ],
+    "correctAnswer": "Robert Baratheon",
+    "image": "raeghar.jpg"
+  },
+  {
+    "question": "What is the name of the village in the picture?",
+    "answers": [
+      "The North Grove",
+      "Greywater Watch",
+      "Last Hearth",
+      "Hardhome"
+    ],
+    "correctAnswer": "Hardhome",
+    "image": "hardhome.jpg"
+  },
+  {
+    "question": "Who killed the Lord of Bones?",
+    "answers": [
+      "Qhorin Halfhand",
+      "Jon Snow",
+      "Tormund Giantsbane",
+      "Ygritte"
+    ],
+    "correctAnswer": "Tormund Giantsbane",
+    "image": "bones.jpg"
   }
 ]

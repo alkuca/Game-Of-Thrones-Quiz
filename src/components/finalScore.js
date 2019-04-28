@@ -9,19 +9,39 @@ class FinalScore extends React.Component{
 
 
     }
-
+    this.makeScoreText = this.makeScoreText.bind(this);
   }
 
+  makeScoreText(answers){
+    let scoreText;
+    if(answers < 5){
+      scoreText = "Please try again!"
+    }
+    else if(answers < 10){
+      scoreText = "Not impressive, Try again!"
+    }
+    else if(answers < 15){
+      scoreText = "Not bad"
+    }
+    else if(answers < 20){
+      scoreText = "Well done!"
+    }
+    else if(answers === 24){
+      scoreText = "WOW, you missed only one question. Great job!"
+    }
+    else if(answers === 25){
+      scoreText = "CONGRATULATIONS! You answered everything right. You are a true Game of thrones superfan!"
+    }
+    return scoreText;
+  }
 
 
   render() {
     return (
       <div className="final-score-container">
         <div className="final-score-inner-container">
-          <h1>WOW</h1>
-          <h2>Your Score is:</h2>
-          <h3>Correct answers: {this.props.correctAnswers}</h3>
-          <h3>Incorrect answers: {this.props.incorrectAnswers}</h3>
+          <h1>{this.makeScoreText(this.props.correctAnswers)}</h1>
+          <h2>You got {this.props.correctAnswers} questions right out of 25</h2>
           <button onClick={this.props.restartQuiz} className="try-again-button">Try Again</button>
         </div>
       </div>

@@ -26,11 +26,21 @@
 }
 
 .intro-button{
-    padding:12px 40px;
-    border:none;
-    background:#3695f0;
-    color:white;
-    font-weight: bold;
-    box-shadow: 3px 3px 4px #00000020;
-    cursor:pointer;
+     padding:12px 40px;
+     border:none;
+     background:#3695f0;
+     color:white;
+     font-weight: bold;
+     box-shadow: 3px 3px 4px #00000020;
+     cursor:pointer;
+ }
+
+@media screen and (max-width: 800px) {
+    .intro-title{
+        font-size:20px;
+        padding-bottom: 10px;
+    }
+    .intro-warrning{
+        padding-bottom:10px
+    }
 }
