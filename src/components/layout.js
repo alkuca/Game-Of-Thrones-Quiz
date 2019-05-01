@@ -30,6 +30,10 @@ const Layout = ({ children }) => (
             maxWidth: 750,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
+            position:`absolute`,
+            left:`0`,
+            right:`0`,
+            top:`0`,
           }}
         >
           <main className="main">{children}</main>

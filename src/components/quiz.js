@@ -50,7 +50,8 @@ class Quiz extends React.Component{
       correctAnswers:0,
       incorrectAnswers:0,
       actualQuestionNumber:1,
-      actualNumberOfQuestions:25
+      actualNumberOfQuestions:25,
+      imageNumber:0
     }
     this.getAnswers = this.getAnswers.bind(this);
     this.getQuestion = this.getQuestion.bind(this);
@@ -67,37 +68,37 @@ class Quiz extends React.Component{
     for (let i = 0; i < answers.length; i++) {
       answers[i].style.pointerEvents = "none";
     }
-     if(questionNumber < this.state.numberOfQuestions) {
-       this.checkAnswer(e,data,questionNumber,answer);
+    if(questionNumber < this.state.numberOfQuestions) {
+      this.checkAnswer(e,data,questionNumber,answer);
 
-       setTimeout(function(){
-         this.setState((prevState) => ({
-           currentQuestionNumber: prevState.currentQuestionNumber + 1,
-           actualQuestionNumber: prevState.actualQuestionNumber + 1
-         }));
-       }.bind(this), 800);
+      setTimeout(function(){
+        this.setState((prevState) => ({
+          currentQuestionNumber: prevState.currentQuestionNumber + 1,
+          actualQuestionNumber: prevState.actualQuestionNumber + 1
+        }));
+      }.bind(this), 800);
 
-     }else{
-       setTimeout(function(){
-         this.setState(() => ({
-           currentQuestionNumber: 0,
-           actualQuestionNumber: 1
-         }));
-       }.bind(this), 800);
-       this.checkAnswer(e,data,questionNumber,answer);
-       this.finishQuiz();
-     }
+    }else{
+      setTimeout(function(){
+        this.setState(() => ({
+          currentQuestionNumber: 0,
+          actualQuestionNumber: 1
+        }));
+      }.bind(this), 800);
+      this.checkAnswer(e,data,questionNumber,answer);
+      this.finishQuiz();
+    }
   }
 
   getAnswers(data,currentQuestionNumber){
     let currentQuestionAnswers = [];
     data.allQuestionsJson.edges[currentQuestionNumber].node.answers.forEach(answer =>
-    currentQuestionAnswers.push(
-      <h2
-        onClick={((e) => this.answerClicked(e, answer,currentQuestionNumber,data))} key={answer} className="answers">
-        {answer}
-      </h2>
-    ))
+      currentQuestionAnswers.push(
+        <h2
+          onClick={((e) => this.answerClicked(e, answer,currentQuestionNumber,data))} key={answer} className="answers">
+          {answer}
+        </h2>
+      ))
     return (currentQuestionAnswers)
   }
 
@@ -155,10 +156,10 @@ class Quiz extends React.Component{
 
 
   componentDidMount(){
-      for (let i = 0; i < 25; i++) {
-        let img = new Image();
-        img.src = asd[i];
-      }
+    for (let i = 0; i < 25; i++) {
+      let img = new Image();
+      img.src = asd[i];
+    }
   }
 
 
@@ -182,25 +183,25 @@ class Quiz extends React.Component{
     `}
         render={data => (
           <>
-            { !this.state.startQuiz ? <Intro startQuiz={this.startQuiz}/> :
-              <div>
-                { !this.state.quizFinished ?
-                  <div>
-                    <h1 className="question">{this.getQuestion(data, this.state.currentQuestionNumber)}</h1>
-                    <img className="question-image" src={asd[this.state.currentQuestionNumber]}
-                         alt="question"/>
-                    <div className="answers-container">{this.getAnswers(data, this.state.currentQuestionNumber)}</div>
-                    <div className="score">
-                      <p>question {this.state.actualQuestionNumber}/{this.state.actualNumberOfQuestions}</p>
-                      <p>correct: {this.state.correctAnswers}</p>
-                      <p>incorrect: {this.state.incorrectAnswers}</p>
-                    </div>
+          { !this.state.startQuiz ? <Intro startQuiz={this.startQuiz}/> :
+            <div className="asd">
+              { !this.state.quizFinished ?
+                <div>
+                  <h1 className="question">{this.getQuestion(data, this.state.currentQuestionNumber)}</h1>
+                  <img className="question-image" src={asd[this.state.currentQuestionNumber]}
+                       alt="question"/>
+                  <div className="answers-container">{this.getAnswers(data, this.state.currentQuestionNumber)}</div>
+                  <div className="score">
+                    <p>question {this.state.actualQuestionNumber}/{this.state.actualNumberOfQuestions}</p>
+                    <p>correct: {this.state.correctAnswers}</p>
+                    <p>incorrect: {this.state.incorrectAnswers}</p>
                   </div>
+                </div>
                 :
                 <FinalScore restartQuiz={this.restartQuiz} correctAnswers={this.state.correctAnswers} incorrectAnswers={this.state.incorrectAnswers}/>
-                }
-              </div>
-            }
+              }
+            </div>
+          }
           </>
         )}
       />

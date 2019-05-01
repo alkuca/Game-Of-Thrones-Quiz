@@ -2,6 +2,47 @@
 import React from "react"
 import "./finalScore.css"
 
+
+import {
+  FacebookShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  PinterestShareButton,
+  VKShareButton,
+  OKShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  LivejournalShareButton,
+  MailruShareButton,
+  ViberShareButton,
+  WorkplaceShareButton,
+  LineShareButton,
+  EmailShareButton,
+} from 'react-share';
+
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  OKIcon,
+  RedditIcon,
+  TumblrIcon,
+  LivejournalIcon,
+  MailruIcon,
+  ViberIcon,
+  WorkplaceIcon,
+  LineIcon,
+  EmailIcon,
+} from 'react-share';
+
 class FinalScore extends React.Component{
   constructor(props) {
     super(props);
@@ -37,11 +78,32 @@ class FinalScore extends React.Component{
 
 
   render() {
+    const url = "https://gameofthronequiz.com";
+    const title = "The hardest Game of thrones quiz"
+
     return (
       <div className="final-score-container">
         <div className="final-score-inner-container">
           <h1>{this.makeScoreText(this.props.correctAnswers)}</h1>
           <h2>You got {this.props.correctAnswers} questions right out of 25</h2>
+          <p className="social-share-text">Share your score on social media and challenge your friends</p>
+          <div className="social-share-container">
+            <FacebookShareButton url={url} quote={"asd"}>
+              <FacebookIcon size={42} round={true}/>
+            </FacebookShareButton>
+            <WhatsappShareButton url={url} title={title}>
+              <WhatsappIcon size={42} round={true}/>
+            </WhatsappShareButton>
+            <TwitterShareButton title={title} url={url} hashtags={["hashtag"]}>
+              <TwitterIcon size={42} round={true}/>
+            </TwitterShareButton>
+            <ViberShareButton title={title} url={url}>
+              <ViberIcon size={42} round={true}/>
+            </ViberShareButton>
+            <RedditShareButton title={title} url={url}>
+              <RedditIcon size={42} round={true}/>
+            </RedditShareButton>
+          </div>
           <button onClick={this.props.restartQuiz} className="try-again-button">Try Again</button>
         </div>
       </div>
