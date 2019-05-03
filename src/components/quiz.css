@@ -112,6 +112,9 @@ body{
         width: 90%!important;
         margin: auto!important;
     }
+    .asd{
+        margin-top:0 !important;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -135,4 +138,12 @@ body{
         width:75%;
         margin: auto;
     }
+    .asd{
+        margin-top:0 !important;
+    }
+}
+
+
+.asd{
+    margin-top:5%;
 }

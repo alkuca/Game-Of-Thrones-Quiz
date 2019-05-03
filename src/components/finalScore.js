@@ -86,15 +86,15 @@ class FinalScore extends React.Component{
         <div className="final-score-inner-container">
           <h1>{this.makeScoreText(this.props.correctAnswers)}</h1>
           <h2>You got {this.props.correctAnswers} questions right out of 25</h2>
-          <p className="social-share-text">Share your score on social media and challenge your friends</p>
+          <p className="social-share-text">Share your score on social media and challenge your friends!</p>
           <div className="social-share-container">
-            <FacebookShareButton url={url} quote={"asd"}>
+            <FacebookShareButton url={url} quote={"I just answered " + this.props.correctAnswers + " questions right out of 25" }>
               <FacebookIcon size={42} round={true}/>
             </FacebookShareButton>
             <WhatsappShareButton url={url} title={title}>
               <WhatsappIcon size={42} round={true}/>
             </WhatsappShareButton>
-            <TwitterShareButton title={title} url={url} hashtags={["hashtag"]}>
+            <TwitterShareButton title={title} url={url}>
               <TwitterIcon size={42} round={true}/>
             </TwitterShareButton>
             <ViberShareButton title={title} url={url}>
